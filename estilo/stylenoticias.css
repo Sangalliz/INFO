@@ -1,0 +1,117 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+
+@font-face {
+    font-family: 'Android';
+    src: url('../fontes/idroid.otf') format('opentype');
+    font-weight: normal;
+}
+
+
+:root {
+
+    --cor0: #c5ebd6;
+    --cor1: #83e1ad;
+    --cor2: #3ddc84;
+    --cor3: #2fa866;
+    --cor4: #1a5c37;
+    --cor5: #063d1e;
+
+
+    --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
+    --fonte-destaque:'Bebas Neue', cursive;
+    --fonte-android:'Android', cursive;  
+}
+
+header{
+    background-color: white;
+    border-radius: 10px;
+    margin-bottom: 7px;
+}
+
+nav {
+    padding: 10px;
+    border-radius: 10px;
+    margin: auto;
+}
+
+nav a {
+    padding-right: 10px;
+    text-decoration: none;
+    font-family: var(--fonte-padrao);
+    font-weight: bold;
+}
+
+nav > a {
+    color: var(--cor4);
+    padding: 9px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition-duration: .5s;
+}
+
+nav a:hover {
+    background-color: #10096e;
+    color: white;
+}
+
+img#pequena {
+    max-width: 300px;
+    margin: auto;
+    display: block;
+}
+
+main h1 {
+    font-family: var(--fonte-destaque);
+    text-align: center;
+    color: var(--cor3);
+    text-decoration: underline;
+    text-shadow: 2px 1px 3px rgba(0, 255, 42, 0.671);
+}
+
+main {
+   font-family: var(--fonte-padrao);
+   background-color: white;
+   min-height: 1000px;
+   border-radius: 15px 5px 10px 5px;
+   padding: 10px;
+   margin: 15px;
+   margin: auto;
+   max-width: 800px;
+   box-shadow: 3px 2px 5px rgb(13, 104, 5);
+}
+
+main > p {
+    font-family: var(--fonte-padrao);
+    text-align: center;
+    font-size: 1.2em;
+    text-indent: 10px;
+    padding-top: 50px;
+}
+
+img#imgpequena {
+    max-width: 400px;
+    margin: auto;
+    display: block;
+    box-shadow: 3px 2px 12px black;
+}
+
+img#imgpequena:hover {
+    box-shadow: 1px 1px  100px #dc3d3d;
+}
+
+.link {
+    text-decoration: none;
+    color: green;
+    text-shadow: 2px 1px 2px rgb(70 255 0);
+}
+
+.link:hover {
+    text-decoration: underline;
+}
+
+body {
+    background-image: radial-gradient(circle, #47A025, #0A0908);
+}
